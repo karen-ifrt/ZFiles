@@ -1,0 +1,21 @@
+
+<?php
+
+$date_expiration = date("Y-m-d", time()+60 * 60 * 24 * 90 );
+
+$db = mysql_connect("x", "xxx", "xxx");
+mysql_select_db('petites_annonces',$db);
+
+$sql = "DELETE FROM annonces WHERE date= '$date_expiration'" ;
+
+mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+
+?>
+
+
+
+bonjour le test fonctionne!!! 
+
+
+
+Je suis la ligne 40 

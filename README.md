@@ -1,0 +1,1 @@
+Renommer env.example.php en env.php et entrer les bonnes informations de connexion à la BDD.
